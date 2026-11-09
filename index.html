@@ -346,6 +346,7 @@
       gap: 16px;
       border-left: 1px solid var(--black);
       overflow-y: auto;
+      overflow-x: visible;
       max-height: 600px;
     }
 
@@ -410,8 +411,17 @@
     /* ============================================================
        TAGS
     ============================================================= */
+    #detailTagsSection {
+      overflow: visible;
+    }
+
+    #detailTags {
+      overflow: visible;
+    }
+
     .tag-group {
       margin-bottom: 16px;
+      overflow: visible;
     }
 
     .tag-group-label {
@@ -436,56 +446,41 @@
       position: relative;
     }
 
-    .tag-badge.has-tooltip {
-      cursor: help;
-    }
-
-    .tag-badge.has-tooltip::before {
-      content: " ?";
-      font-size: 10px;
-      opacity: 0.6;
-    }
-
     .tag-badge:hover {
       background: var(--ink);
       color: var(--paper);
     }
 
-    .tag-badge .tooltip {
-      visibility: hidden;
-      position: absolute;
-      bottom: 125%;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: var(--ink);
+    /* ============================================================
+       SHARING OPTIONS
+    ============================================================= */
+    .sharing-option {
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      padding: 6px 10px;
+      background: var(--paper);
+      border: 1px solid var(--ink);
+      border-radius: 0;
+      font-family: 'JMH Typewriter', monospace;
+      font-size: 13px;
+      color: var(--ink);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .sharing-option:hover {
+      background: var(--ink);
       color: var(--paper);
-      text-align: left;
-      padding: 8px 12px;
-      border-radius: 4px;
-      font-size: 11px;
-      white-space: normal;
-      max-width: 250px;
-      width: max-content;
-      z-index: 1000;
-      opacity: 0;
-      transition: opacity 0.2s;
-      line-height: 1.4;
+      cursor: pointer;
     }
 
-    .tag-badge .tooltip::after {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      margin-left: -5px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: var(--ink) transparent transparent transparent;
+    .sharing-option-icon {
+      display: none;
     }
 
-    .tag-badge:hover .tooltip {
-      visibility: visible;
-      opacity: 1;
+    .sharing-option-label {
+      font-weight: 400;
     }
 
     /* ============================================================
@@ -745,6 +740,10 @@
               <div class="detail-section-label">Links</div>
               <div class="detail-section-value" id="detailLinks"></div>
             </div>
+            <div id="detailSharingSection" style="display: none;">
+              <div class="detail-section-label">Get this zine!</div>
+              <div class="detail-section-value" id="detailSharing"></div>
+            </div>
             <div id="detailTagsSection" style="display: none;">
               <div id="detailTags"></div>
             </div>
@@ -795,7 +794,14 @@
     ],
     "instagram": "@growinggreenlund; @commongroundcommunitygardeners",
     "website": "",
-    "image": "tree zines masked/RTT_0034_send-my-love-to-maggie.png"
+    "image": "tree zines masked/RTT_0034_send-my-love-to-maggie.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1h4vZxfOSZw1ZqZzAQBSTmd1VI_1nAJWm",
+    "shop_url": ""
   },
   {
     "title": "Student Group Submission",
@@ -811,7 +817,13 @@
     "tags": [],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0008_student-group---marist.png"
+    "image": "tree zines masked/RTT_0008_student-group---marist.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "A Mini Guide to Winter Trees Common on River Walks in Maine",
@@ -829,7 +841,14 @@
     ],
     "instagram": "@lgroverart",
     "website": "https://friendzine.beehiiv.com",
-    "image": "tree zines masked/RTT_0037_a-mini-guide-to-winter-trees.png"
+    "image": "tree zines masked/RTT_0037_a-mini-guide-to-winter-trees.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1Ra-GvGfdVGchi5342cY5z5E8vO4DrTFc",
+    "shop_url": ""
   },
   {
     "title": "A Tree Tour of King Zog's Trails",
@@ -847,7 +866,16 @@
     ],
     "instagram": "",
     "website": "https://www.ledg.fun; https://learnwithlaura.my.canva.site",
-    "image": "tree zines masked/RTT_0036_tree-tour-of-king-zogs-trails.png"
+    "image": "tree zines masked/RTT_0036_tree-tour-of-king-zogs-trails.png",
+    "sharing": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=11GmFu3C43RYb1KAt9FhJS2OAddVy2kui",
+    "shop_url": ""
   },
   {
     "title": "A Little Less Lonely",
@@ -855,7 +883,7 @@
     "artist": "Denise Hill",
     "affiliation": "",
     "bio": "I am a retired old lady with autism who enjoys spending more time with trees than people.",
-    "description": "A tree on my morning walk inspired the zine in combination with reading about the impact nature has on our wellbeing in the book Nature Fix as well as reading Robin Wall Kimmerer.",
+    "description": "A tree on my morning walk inspired the zine in combination with reading about the impact nature has on our wellbeing in the book Nature Fix as well as reading Robin Wall Kimmerer. Created on upcycled paper so text and patches may show.",
     "city": "Bay City",
     "state": "Michigan",
     "country": "United States",
@@ -865,7 +893,14 @@
     ],
     "instagram": "@putapotofwateron",
     "website": "",
-    "image": "tree zines masked/RTT_0053_a-little-less-lonely.png"
+    "image": "tree zines masked/RTT_0053_a-little-less-lonely.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1oifuhP4CgsiQlUxiTuO5UQanmZKJGyPe",
+    "shop_url": ""
   },
   {
     "title": "Copse and Sobbers",
@@ -883,7 +918,14 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0071_copse-and-sobbers.png"
+    "image": "tree zines masked/RTT_0071_copse-and-sobbers.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1C-huLkf5-DX8V2_SVy2igPAUcDISfdOJ",
+    "shop_url": ""
   },
   {
     "title": "The Street Tree and the Scientist",
@@ -902,7 +944,14 @@
     ],
     "instagram": "@nlr.love",
     "website": "https://www.natalie-love.com",
-    "image": "tree zines masked/RTT_0038_the-street-tree-and-the-scientist.png"
+    "image": "tree zines masked/RTT_0038_the-street-tree-and-the-scientist.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1LOUndkRbX6MEk0kX9PB8olvw_xExekVt",
+    "shop_url": ""
   },
   {
     "title": "This Oak’s No Joke",
@@ -920,7 +969,14 @@
     ],
     "instagram": "@vicortreat",
     "website": "",
-    "image": "tree zines masked/RTT_0039_this-oaks-no-joke.png"
+    "image": "tree zines masked/RTT_0039_this-oaks-no-joke.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1Z7ngnQCnZ4yDRlnXtcnAhb7nU8yODwxu",
+    "shop_url": ""
   },
   {
     "title": "Free Trees",
@@ -938,7 +994,14 @@
     ],
     "instagram": "@earth_and_company",
     "website": "",
-    "image": "tree zines masked/RTT_0051_free-trees.png"
+    "image": "tree zines masked/RTT_0051_free-trees.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1kjCCBrqmGmajLNUDEklGZUg5VS3Aze7M",
+    "shop_url": ""
   },
   {
     "title": "Oaks",
@@ -956,7 +1019,16 @@
     ],
     "instagram": "@somewonderland",
     "website": "https://somewonderland.itch.io",
-    "image": "tree zines masked/RTT_0052_oaks-a-love-note.png"
+    "image": "tree zines masked/RTT_0052_oaks-a-love-note.png",
+    "sharing": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1XDSU59C3Y7zbB1M1vxbb3wekRdg92vDi",
+    "shop_url": "https://somewonderland.itch.io"
   },
   {
     "title": "Ginkgo Trees of Lexington, Kentucky",
@@ -974,7 +1046,14 @@
     ],
     "instagram": "@bentheredrakethat",
     "website": "",
-    "image": "tree zines masked/RTT_0067_gingko-trees-of-lexington-kentucky.png"
+    "image": "tree zines masked/RTT_0067_gingko-trees-of-lexington-kentucky.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1HWw2_oYSkuUi3ckIhpvxVARo09hsAH-X",
+    "shop_url": ""
   },
   {
     "title": "The Scenic Oak on Scenic Road",
@@ -992,7 +1071,15 @@
     ],
     "instagram": "@tinysavagesketches",
     "website": "",
-    "image": "tree zines masked/RTT_0072_scenic-oak-on-scenic-road.png"
+    "image": "tree zines masked/RTT_0072_scenic-oak-on-scenic-road.png",
+    "sharing": [
+      1,
+      2,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1sCrCMswOc0jJSQPK5FnDkXesJrm5_AOn",
+    "shop_url": ""
   },
   {
     "title": "Aspens Are Wonderful Creatures",
@@ -1012,7 +1099,14 @@
     ],
     "instagram": "@wch.art",
     "website": "https://wchart.myportfolio.com/work",
-    "image": "tree zines masked/RTT_0059_aspens-are-wonderful-creatures.png"
+    "image": "tree zines masked/RTT_0059_aspens-are-wonderful-creatures.png",
+    "sharing": [
+      1,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1tcUUdYAsRAtStoeJxnVowTpuwbgcPsKD",
+    "shop_url": ""
   },
   {
     "title": "Trees of Missouri",
@@ -1030,7 +1124,14 @@
     ],
     "instagram": "@hadleyhadz",
     "website": "",
-    "image": "tree zines masked/RTT_0070_trees-of-missouri.png"
+    "image": "tree zines masked/RTT_0070_trees-of-missouri.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1bhmOjG_QssuLD4vqZjgGuD8-C47lYuBh",
+    "shop_url": ""
   },
   {
     "title": "Bark of MacGroveland, St. Paul, Minnesota",
@@ -1048,7 +1149,14 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0073_bark-of-mac-groveland-st-paul.png"
+    "image": "tree zines masked/RTT_0073_bark-of-mac-groveland-st-paul.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1WKbpY3qyh6-nWwWUQyp05zO3rgQpJ4vj",
+    "shop_url": ""
   },
   {
     "title": "Can You Love a Tree?",
@@ -1060,7 +1168,7 @@
     "city": "Baltimore",
     "state": "Maryland",
     "country": "United States",
-    "region": "US South",
+    "region": "US Northeast",
     "tags": [
       "analog",
       "nostalgia",
@@ -1068,7 +1176,13 @@
     ],
     "instagram": "@tlaneforster; @adaptedarttlf",
     "website": "https://tlaneforster.blogspot.com; https://mimosapicnic.etsy.com",
-    "image": "tree zines masked/RTT_0035_can-you-love-a-tree.png"
+    "image": "tree zines masked/RTT_0035_can-you-love-a-tree.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "The Second Oldest Tree in Texas",
@@ -1086,7 +1200,13 @@
     ],
     "instagram": "@marieketring",
     "website": "",
-    "image": "tree zines masked/RTT_0065_second-oldest-tree-in-texas.png"
+    "image": "tree zines masked/RTT_0065_second-oldest-tree-in-texas.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "Love Letter to a Woods",
@@ -1104,7 +1224,15 @@
     ],
     "instagram": "",
     "website": "https://www.amywilliamswellness.com",
-    "image": "tree zines masked/RTT_0049_love-letter-to-9-woods.png"
+    "image": "tree zines masked/RTT_0049_love-letter-to-9-woods.png",
+    "sharing": [
+      1,
+      2,
+      4
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1Cy5DcO_zCAHUSqQK7QODjaiVoMd9qYIy",
+    "shop_url": "https://www.amywilliamswellness.com/shop/"
   },
   {
     "title": "Memories in the Branches",
@@ -1123,7 +1251,13 @@
     ],
     "instagram": "@inkyhilo",
     "website": "",
-    "image": "tree zines masked/RTT_0085_memories-in-the-branches.png"
+    "image": "tree zines masked/RTT_0085_memories-in-the-branches.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "Japanese Magnolias Like It Hot",
@@ -1141,7 +1275,13 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0044_japanese-magnolias-like-it-hot.png"
+    "image": "tree zines masked/RTT_0044_japanese-magnolias-like-it-hot.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1jvF5eg8uPrXh1aTTmtcjprATfPOD0Xwd",
+    "shop_url": ""
   },
   {
     "title": "All Around the Mulberry Trees of Durham",
@@ -1160,12 +1300,18 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0046_all-around-the-mulberry-trees-of-durham.png"
+    "image": "tree zines masked/RTT_0046_all-around-the-mulberry-trees-of-durham.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1iODPyBWja-q4fCq1ZKN9JFCgTks14qoB",
+    "shop_url": ""
   },
   {
-    "title": "Untitled",
+    "title": "My Tree",
     "subtitle": "",
-    "artist": "Time Markello",
+    "artist": "Poorly Illustrated",
     "affiliation": "Poorly Illustrated",
     "bio": "I make Poorly Illustrated comics about music and things.",
     "description": "This is a tree in my yard so I guess it's my tree. Can you own a tree? seems silly when the tree is way older than me.",
@@ -1178,7 +1324,13 @@
     ],
     "instagram": "",
     "website": "https://poorlyillustrated.com",
-    "image": "tree zines masked/RTT_0066_poorly-illustrated.png"
+    "image": "tree zines masked/RTT_0066_poorly-illustrated.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "The Tree Tunnel",
@@ -1196,7 +1348,14 @@
     ],
     "instagram": "@amyannlee.archive",
     "website": "",
-    "image": "tree zines masked/RTT_0063_the-tree-tunnel.png"
+    "image": "tree zines masked/RTT_0063_the-tree-tunnel.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1-watcXpe6WLUeM9rcZi0cEmVtL6y5N8q",
+    "shop_url": ""
   },
   {
     "title": "Pink Snow",
@@ -1215,7 +1374,14 @@
     ],
     "instagram": "@mikeshort42",
     "website": "https://backintheshed.com",
-    "image": "tree zines masked/RTT_0081_pink-snow.png"
+    "image": "tree zines masked/RTT_0081_pink-snow.png",
+    "sharing": [
+      1,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1L86dfSg5jI0bmMNwB1RfBjqp7vZpm4k5",
+    "shop_url": ""
   },
   {
     "title": "Forest Pansy Redbuds of Virginia",
@@ -1235,7 +1401,14 @@
     ],
     "instagram": "@pswillcox1996",
     "website": "https://www.graymattersdesignpublishing.com; https://graymattersdesign.wixsite.com/portfolio",
-    "image": "tree zines masked/RTT_0083_redbuds-of-virginia.png"
+    "image": "tree zines masked/RTT_0083_redbuds-of-virginia.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=143FA3aYTVJhaBClowC-2HRl-uhaImN_L",
+    "shop_url": ""
   },
   {
     "title": "The Protector Norway Spruce",
@@ -1253,7 +1426,14 @@
     ],
     "instagram": "@pswillcox1996",
     "website": "https://www.graymattersdesignpublishing.com; https://graymattersdesign.wixsite.com/portfolio",
-    "image": "tree zines masked/RTT_0084_the-protector-norway-spruce.png"
+    "image": "tree zines masked/RTT_0084_the-protector-norway-spruce.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1LfAOsyENEY4aXobg51Pi3NILQX60Q1B3",
+    "shop_url": ""
   },
   {
     "title": "My Favorite Local Oak: Past and Future",
@@ -1273,7 +1453,14 @@
     ],
     "instagram": "@untypicality.reclaimed",
     "website": "",
-    "image": "tree zines masked/RTT_0047_my-favorite-local-oak-tree.png"
+    "image": "tree zines masked/RTT_0047_my-favorite-local-oak-tree.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1QkFo0fYLfjFzwssN7qik1Ji7r-D22lsL",
+    "shop_url": ""
   },
   {
     "title": "Trees of Roanoke",
@@ -1291,7 +1478,13 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0082_trees-of-roanoke.png"
+    "image": "tree zines masked/RTT_0082_trees-of-roanoke.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "Leaf",
@@ -1309,7 +1502,13 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0064_leaf-a-zine-san-antonio.png"
+    "image": "tree zines masked/RTT_0064_leaf-a-zine-san-antonio.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "Oak",
@@ -1327,28 +1526,17 @@
     ],
     "instagram": "@laurabillart",
     "website": "https://laurabillart.com",
-    "image": "tree zines masked/RTT_0043_oak---tryon.png"
+    "image": "tree zines masked/RTT_0043_oak---tryon.png",
+    "sharing": [
+      1,
+      4
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1V7tTirl_ASooSYQU2zLIIpUMXvj_iKd0",
+    "shop_url": ""
   },
   {
     "title": "Untitled",
-    "subtitle": "",
-    "artist": "Claudia Davis",
-    "affiliation": "",
-    "bio": "Claudia Davis is a nature and tree enthusiast who has lived in Washington DC for over 6 years. During the day she works in environmental policy to protect what she loves but her free time goes to enjoying and capturing the natural world through drawing and printmaking.",
-    "description": "I submitted one other zine I had already made about me and a tree in DC but when I saw this prompt I knew I wanted to create a new zine with this collection in mind! DC is a beautiful city full of awesome people with no federal representation and now the President and Congress have made it their mission to further weaken our self determination-this even extends to the fate of our trees!! The title of the zine is a nod to Free DC, our amazing local organization fighting to defend DC's Home Rule and hopefully one day facilitate full statehood for the district.",
-    "city": "Washington",
-    "state": "District of Columbia",
-    "country": "United States",
-    "region": "US South",
-    "tags": [
-      "backyard"
-    ],
-    "instagram": "",
-    "website": "",
-    "image": "tree zines masked/RTT_0086_untitled---DC.png"
-  },
-  {
-    "title": "Tree DC",
     "subtitle": "",
     "artist": "Claudia Davis",
     "affiliation": "",
@@ -1358,10 +1546,42 @@
     "state": "District of Columbia",
     "country": "United States",
     "region": "US South",
+    "tags": [
+      "backyard"
+    ],
+    "instagram": "",
+    "website": "",
+    "image": "tree zines masked/RTT_0086_untitled---DC.png",
+    "sharing": [
+      1,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1EA-zUkMGRoIMZmWQoTeQxZp1rTS07LLb",
+    "shop_url": ""
+  },
+  {
+    "title": "Tree DC",
+    "subtitle": "",
+    "artist": "Claudia Davis",
+    "affiliation": "",
+    "bio": "Claudia Davis is a nature and tree enthusiast who has lived in Washington DC for over 6 years. During the day she works in environmental policy to protect what she loves but her free time goes to enjoying and capturing the natural world through drawing and printmaking.",
+    "description": "DC is a beautiful city full of awesome people with no federal representation and now the President and Congress have made it their mission to further weaken our self determination-this even extends to the fate of our trees!! The title of the zine is a nod to Free DC, our amazing local organization fighting to defend DC's Home Rule and hopefully one day facilitate full statehood for the district.",
+    "city": "Washington",
+    "state": "District of Columbia",
+    "country": "United States",
+    "region": "US South",
     "tags": [],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0080_tree-DC.png"
+    "image": "tree zines masked/RTT_0080_tree-DC.png",
+    "sharing": [
+      1,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1FfyTEa1C3x753_2f1IQgBe4U9EpDfzUE",
+    "shop_url": ""
   },
   {
     "title": "The Big Ass Douglas Fir",
@@ -1380,7 +1600,13 @@
     ],
     "instagram": "@frivolousforestartworks",
     "website": "",
-    "image": "tree zines masked/RTT_0077_big-ass-douglas-fir.png"
+    "image": "tree zines masked/RTT_0077_big-ass-douglas-fir.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "Place - Time - Jacaranda",
@@ -1399,7 +1625,14 @@
     ],
     "instagram": "",
     "website": "https://travelzines.store",
-    "image": "tree zines masked/RTT_0040_place---time---jacaranda.png"
+    "image": "tree zines masked/RTT_0040_place---time---jacaranda.png",
+    "sharing": [
+      1,
+      4
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1_qdT9fsbpa2X_HHDEgx8bpspM590iMGp",
+    "shop_url": "https://travelzines.store/products/place-time-jacaranda"
   },
   {
     "title": "Untitled",
@@ -1417,7 +1650,13 @@
     ],
     "instagram": "@patrick.meat",
     "website": "",
-    "image": "tree zines masked/RTT_0041_untitled---fort-collins.png"
+    "image": "tree zines masked/RTT_0041_untitled---fort-collins.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=10UF1m0yJx_-FTIiltbVvoFq9nmU11hDr",
+    "shop_url": ""
   },
   {
     "title": "Kite Thief",
@@ -1435,7 +1674,15 @@
     ],
     "instagram": "",
     "website": "https://gladlyinsane.com/case-files-2/",
-    "image": "tree zines masked/RTT_0055_kite-thief.png"
+    "image": "tree zines masked/RTT_0055_kite-thief.png",
+    "sharing": [
+      1,
+      2,
+      4
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1nPNB0qbgy9-uvl76Wc7Z0L-SKoyRo4Br",
+    "shop_url": ""
   },
   {
     "title": "Douglas Fir",
@@ -1453,7 +1700,14 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0075_douglas-fir-kenmore.png"
+    "image": "tree zines masked/RTT_0075_douglas-fir-kenmore.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1x0hGFA7spCysE74fZzPTdUA1RrP91MKP",
+    "shop_url": "https://ko-fi.com/beyondthewave"
   },
   {
     "title": "Trees of Lazy Mountain",
@@ -1471,7 +1725,13 @@
     ],
     "instagram": "",
     "website": "https://www.arcticternpress.com",
-    "image": "tree zines masked/RTT_0058_trees-of-lazy-mountain.png"
+    "image": "tree zines masked/RTT_0058_trees-of-lazy-mountain.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "Requiem for a Tree",
@@ -1491,7 +1751,13 @@
     ],
     "instagram": "@amystewart",
     "website": "https://www.amystewart.com",
-    "image": "tree zines masked/RTT_0062_requiem-for-a-tree.png"
+    "image": "tree zines masked/RTT_0062_requiem-for-a-tree.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1XwiDwiYLI1vgEUST_BLLe1HoACnB9LRX",
+    "shop_url": ""
   },
   {
     "title": "Stuff Trees of Portland",
@@ -1510,7 +1776,13 @@
     ],
     "instagram": "",
     "website": "https://art.mysky.net",
-    "image": "tree zines masked/RTT_0061_stuff-trees-of-pdx.png"
+    "image": "tree zines masked/RTT_0061_stuff-trees-of-pdx.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1EROJQADHkjaZvCij4fA71sW6xvf44gmd",
+    "shop_url": "https://elleskinner.itch.io/"
   },
   {
     "title": "Mad Squirrels, Frost Beard, and Trees That Go Shhh in the Night",
@@ -1529,7 +1801,14 @@
     ],
     "instagram": "@skamama",
     "website": "",
-    "image": "tree zines masked/RTT_0074_mad-squirrels-frost-beard.png"
+    "image": "tree zines masked/RTT_0074_mad-squirrels-frost-beard.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=12qSEDQb8_enTc5cp35IzAOD9tNoMQLaA",
+    "shop_url": ""
   },
   {
     "title": "Untitled",
@@ -1547,7 +1826,16 @@
     ],
     "instagram": "@zbrayillustrations",
     "website": "",
-    "image": "tree zines masked/RTT_0060_Untitled---reno-NV.png"
+    "image": "tree zines masked/RTT_0060_Untitled---reno-NV.png",
+    "sharing": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1SSyVOr4zBmlnFf0HjH5-4SMyojLVi2Q-",
+    "shop_url": "https://www.etsy.com/listing/4603202993/my-beloved-trees-of-the-sierra-nevada"
   },
   {
     "title": "How to Identify and Use the Magnolia",
@@ -1565,7 +1853,13 @@
     ],
     "instagram": "@pupworkz",
     "website": "",
-    "image": "tree zines masked/RTT_0054_how-to-identify-and-use-magnolia.png"
+    "image": "tree zines masked/RTT_0054_how-to-identify-and-use-magnolia.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "Are You a Tree?",
@@ -1584,7 +1878,15 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0056_are-you-a-tree.png"
+    "image": "tree zines masked/RTT_0056_are-you-a-tree.png",
+    "sharing": [
+      1,
+      2,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1eSGlugPCPt736V1tIlL94HZalAppr42Y",
+    "shop_url": ""
   },
   {
     "title": "Alder St Walnut Tree",
@@ -1602,7 +1904,16 @@
     ],
     "instagram": "@luvletterstudios",
     "website": "",
-    "image": "tree zines masked/RTT_0079_alder-st-walnut-tree.png"
+    "image": "tree zines masked/RTT_0079_alder-st-walnut-tree.png",
+    "sharing": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1tiAQALCLQKzEnnPlJm7dD_Dh3ftOrd1M",
+    "shop_url": "https://luvletterstudios.etsy.com/"
   },
   {
     "title": "Oh, Beautiful Palm Tree",
@@ -1620,7 +1931,13 @@
     ],
     "instagram": "@tiffymluv",
     "website": "https://tiffymluv.wixsite.com/porfolio",
-    "image": "tree zines masked/RTT_0057_oh-beautiful-palm-tree.png"
+    "image": "tree zines masked/RTT_0057_oh-beautiful-palm-tree.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1vWQDNVKqPW2K4u1kMu0oDCoNKUkyY7BB",
+    "shop_url": ""
   },
   {
     "title": "Wormy’s Mysterious Tree",
@@ -1638,7 +1955,15 @@
     ],
     "instagram": "@doki.doki.kokoro.store; @pegatinasclub",
     "website": "",
-    "image": "tree zines masked/RTT_0029_wormy's-mysterious-tree.png"
+    "image": "tree zines masked/RTT_0029_wormy's-mysterious-tree.png",
+    "sharing": [
+      1,
+      2,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=16dw2zM2IGcc54Vb1G-LBv5tKXVCKQ5V2",
+    "shop_url": ""
   },
   {
     "title": "Devrai",
@@ -1657,7 +1982,14 @@
     ],
     "instagram": "@a.nu.beginning",
     "website": "https://anufolio.carrd.co",
-    "image": "tree zines masked/RTT_0020_devrai.png"
+    "image": "tree zines masked/RTT_0020_devrai.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1sfWEgFyy3U_pq9_p-k4YgiPIZTVG_BW_",
+    "shop_url": ""
   },
   {
     "title": "Pear Tree",
@@ -1676,7 +2008,13 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0030_pear-tree.png"
+    "image": "tree zines masked/RTT_0030_pear-tree.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "How About Them Apples?",
@@ -1694,7 +2032,13 @@
     ],
     "instagram": "",
     "website": "https://www.laurawesley.ca",
-    "image": "tree zines masked/RTT_0031_how-about-them-apples.png"
+    "image": "tree zines masked/RTT_0031_how-about-them-apples.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "A Mini Zine About a Schoolyard Tree, Childhood Friends, and Growing Up",
@@ -1713,7 +2057,14 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0032_a-zine-about-a-schoolyard-tree.png"
+    "image": "tree zines masked/RTT_0032_a-zine-about-a-schoolyard-tree.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=10pNHmSLITbL6Sv5HJow9VRw5A-xM6mVD",
+    "shop_url": ""
   },
   {
     "title": "Making Willow Charcoal",
@@ -1731,7 +2082,13 @@
     ],
     "instagram": "@sarahlawsontoronto",
     "website": "https://sarahlawson.ca",
-    "image": "tree zines masked/RTT_0033_making-willow-charcoal.png"
+    "image": "tree zines masked/RTT_0033_making-willow-charcoal.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1Ipf7FWDmnOMcv2Rd_lSss2c-lf1b7-Pc",
+    "shop_url": ""
   },
   {
     "title": "Untitled",
@@ -1749,7 +2106,13 @@
     ],
     "instagram": "@chicabeingme",
     "website": "",
-    "image": "tree zines masked/RTT_0027_untitled---santiago-chile.png"
+    "image": "tree zines masked/RTT_0027_untitled---santiago-chile.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "Leafing Through Bogotá",
@@ -1769,14 +2132,21 @@
     ],
     "instagram": "@animamundi.co",
     "website": "",
-    "image": "tree zines masked/RTT_0028_leafing-through-bogata.png"
+    "image": "tree zines masked/RTT_0028_leafing-through-bogata.png",
+    "sharing": [
+      1,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=16Lw3zN8xQPnFkv32fxMI8iPJU4SDsuJi",
+    "shop_url": ""
   },
   {
     "title": "Student Group Submission",
     "subtitle": "Centro Universitario Anglo Mexicano - Cancún",
     "artist": "CUAM Cancún Student Group",
     "affiliation": "Centro Universitario Anglo Mexicano (CUAM) Cancún",
-    "bio": "The students at the CUAM school of Cancún created a collection of zines for Reading the Trees about trees on the Yucatán Peninsula that weave together personal memories, poetry, and regional folklore surrounding the ceiba, chacá, and chechén trees, among others!\n\nContributions from: Juan Sebastian D'Olivo Dominguez, Maria Fernanda Avalos Aguirre, Anika Diener Álvarez, Carla Fernanda Corona Flores, Genesis Cervantes Techeira, Jimena Vianey Velazquez Segovia, Aislinn Valeria Jiménez Cetina, Miguel Ángel Navarro Gómez, Pedro Miguel Salinas Delgado, Regina Hernández Loreto, Santiago Yumil Sánchez Valdez, Ximena Santiago Morales, and Isabella Ángel Morales Díaz.",
+    "bio": "The students at the CUAM school of Cancún created a collection of zines for Reading the Trees about trees on the Yucatán Peninsula that weave together personal memories, poetry, and regional folklore surrounding the ceiba, chacá, and chechén trees, among others! Contributions from: Juan Sebastian D'Olivo Dominguez, Maria Fernanda Avalos Aguirre, Anika Diener Álvarez, Carla Fernanda Corona Flores, Genesis Cervantes Techeira, Jimena Vianey Velazquez Segovia, Aislinn Valeria Jiménez Cetina, Miguel Ángel Navarro Gómez, Pedro Miguel Salinas Delgado, Regina Hernández Loreto, Santiago Yumil Sánchez Valdez, Ximena Santiago Morales, and Isabella Ángel Morales Díaz.",
     "description": "",
     "city": "Cancún",
     "state": "Quintana Roo",
@@ -1785,7 +2155,13 @@
     "tags": [],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0007_student-group---CUAM-cancun.png"
+    "image": "tree zines masked/RTT_0007_student-group---CUAM-cancun.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "Roots",
@@ -1803,7 +2179,13 @@
     ],
     "instagram": "@ville_illustrator",
     "website": "",
-    "image": "tree zines masked/RTT_0011_roots.png"
+    "image": "tree zines masked/RTT_0011_roots.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "Trees with Eyes",
@@ -1821,7 +2203,13 @@
     ],
     "instagram": "@kunsthuhn",
     "website": "",
-    "image": "tree zines masked/RTT_0017_trees-with-eyes.png"
+    "image": "tree zines masked/RTT_0017_trees-with-eyes.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "Roots & Hope",
@@ -1839,7 +2227,13 @@
     ],
     "instagram": "@sadbluen",
     "website": "",
-    "image": "tree zines masked/RTT_0016_roots-and-hope.png"
+    "image": "tree zines masked/RTT_0016_roots-and-hope.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "In Memory of a Tree",
@@ -1857,8 +2251,16 @@
       "feast"
     ],
     "instagram": "@alumpofrice",
-    "website": "",
-    "image": "tree zines masked/RTT_0014_in-memory-of-a-tree.png"
+    "website": "https://alumpofrice.wordpress.com/",
+    "image": "tree zines masked/RTT_0014_in-memory-of-a-tree.png",
+    "sharing": [
+      1,
+      2,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=130X5BcLlLofj3lUykpxkEQPI58xM6J7Y",
+    "shop_url": ""
   },
   {
     "title": "On Trees and Possession",
@@ -1877,7 +2279,15 @@
     ],
     "instagram": "@vanco.jpeg",
     "website": "https://substack.com/@annavanco",
-    "image": "tree zines masked/RTT_0012_on-trees-and-possession.png"
+    "image": "tree zines masked/RTT_0012_on-trees-and-possession.png",
+    "sharing": [
+      1,
+      2,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1Cx__Ru4ZC8RPSGXqkxO8sjoM7oOqG-rz",
+    "shop_url": ""
   },
   {
     "title": "Trees I’ve Hugged and Where in Berlin to Find Them",
@@ -1896,7 +2306,15 @@
     ],
     "instagram": "@abanimates",
     "website": "https://auilix.com",
-    "image": "tree zines masked/RTT_0013_trees-I've-hugged-and-where-in-berlin.png"
+    "image": "tree zines masked/RTT_0013_trees-I've-hugged-and-where-in-berlin.png",
+    "sharing": [
+      1,
+      2,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1zFb-EWHhM8Mr5W-tj_0tCyURKfvGjsA9",
+    "shop_url": ""
   },
   {
     "title": "Oh My Dear Pear",
@@ -1914,7 +2332,13 @@
     ],
     "instagram": "@giuliasassoli",
     "website": "",
-    "image": "tree zines masked/RTT_0015_oh-my-dear-pear.png"
+    "image": "tree zines masked/RTT_0015_oh-my-dear-pear.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "The Fairies of Urban Trees",
@@ -1932,7 +2356,13 @@
     ],
     "instagram": "@mbm.arts",
     "website": "",
-    "image": "tree zines masked/RTT_0018_fairies-of-urban-trees.png"
+    "image": "tree zines masked/RTT_0018_fairies-of-urban-trees.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1MJ5z9Bj9cVYI1Se3dTOYTA-XP1wRrPUh",
+    "shop_url": ""
   },
   {
     "title": "Chinese Windmill Palm Tree",
@@ -1950,7 +2380,14 @@
     ],
     "instagram": "@hannahmoshtael",
     "website": "https://www.hannahmoshtael.com",
-    "image": "tree zines masked/RTT_0019_chinese-windmill-palm-tree.png"
+    "image": "tree zines masked/RTT_0019_chinese-windmill-palm-tree.png",
+    "sharing": [
+      1,
+      2
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1VCQNAKD0DgY9PaRAoKOoMiRud_1__YEX",
+    "shop_url": ""
   },
   {
     "title": "My Favorite Hyperlocal Tree in the Fall",
@@ -1968,7 +2405,15 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0026_my-favorite-hyperlocal-tree.png"
+    "image": "tree zines masked/RTT_0026_my-favorite-hyperlocal-tree.png",
+    "sharing": [
+      1,
+      2,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1imm3nGf2gGJ_WXbyNH89fRF46QI45z1c",
+    "shop_url": ""
   },
   {
     "title": "Trees Indoors",
@@ -1987,7 +2432,13 @@
     ],
     "instagram": "@boigender",
     "website": "",
-    "image": "tree zines masked/RTT_0022_trees-indoors.png"
+    "image": "tree zines masked/RTT_0022_trees-indoors.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1e-LpuTTashz0kmRZhaQJ9xZ9bXlK-iyt",
+    "shop_url": ""
   },
   {
     "title": "Trees of Bangalore",
@@ -2005,7 +2456,14 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0023_trees-of-bangalore-silicon-valley.png"
+    "image": "tree zines masked/RTT_0023_trees-of-bangalore-silicon-valley.png",
+    "sharing": [
+      1,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1NqM0u_5mx4aMG6XrIjSZXz54uO-Rgckb",
+    "shop_url": ""
   },
   {
     "title": "The curious case of Chandigarh's autumn in spring phenomenon",
@@ -2024,7 +2482,13 @@
     ],
     "instagram": "@oreganooranges",
     "website": "",
-    "image": "tree zines masked/RTT_0024_the-curious-case-of-chandigarhs.png"
+    "image": "tree zines masked/RTT_0024_the-curious-case-of-chandigarhs.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1kaSn_AUI9bmjci75hNUJxtu-7j6rCc9J",
+    "shop_url": ""
   },
   {
     "title": "Trees from My Garden and from My City Nagpur",
@@ -2043,8 +2507,15 @@
       "field"
     ],
     "instagram": "@chikoobee",
-    "website": "https://tinyurl.com/ChikoobeePortfolio",
-    "image": "tree zines masked/RTT_0025_trees-from-my-garden-and-from-my-city-nagpur.png"
+    "website": "",
+    "image": "tree zines masked/RTT_0025_trees-from-my-garden-and-from-my-city-nagpur.png",
+    "sharing": [
+      1,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=10mOs7JuXZUF7_VkCqE_TRIXPCO2E1LTk",
+    "shop_url": ""
   },
   {
     "title": "In My Memory, a Tree Called to Me",
@@ -2063,14 +2534,22 @@
     ],
     "instagram": "@fatimah.creates",
     "website": "",
-    "image": "tree zines masked/RTT_0021_in-my-memory-a-tree-called-to-me.png"
+    "image": "tree zines masked/RTT_0021_in-my-memory-a-tree-called-to-me.png",
+    "sharing": [
+      1,
+      3,
+      4
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1sonsPfB0paRJlxnyUzo7xDtOw7FSVEfA",
+    "shop_url": "www.patreon.com/fatimah_creates"
   },
   {
     "title": "Give Me a Home Amongst the Gum Trees",
     "subtitle": "Flora and Fauna of Victoria, Australia",
     "artist": "Sasha Oskorep",
     "affiliation": "Lil Bean Zine",
-    "bio": "I am Sasha Skore part of Lil Bean Zines. I’m trying to make music, support mental health, the environment, and share creativity and connection through zines. Kathleen, my other half, is Conservation Sprout, deeply passionate about sustainability, environmental science, media, and fashion.",
+    "bio": "I am Sasha Skore part of Lil Bean Zine. I’m trying to make music, support mental health, the environment, and share creativity and connection through zines. Kathleen, my other half, is Conservation Sprout, deeply passionate about sustainability, environmental science, media, and fashion.",
     "description": "This zine is inspired by my partner and I’s love for trees, the environment, and our local Australian native plant and wildlife. Varied eucalyptus trees feature as they are an iconic, essential, and admirable group of trees. I also wanted to celebrate the range of environments and ecosystems attached to these trees, particularly the animals who depend on them (including us), and live very close to our homes in suburbs and the city. I reflected on both broader habitat and personal perspectives. I love flying foxes / bats and know the relationships between all animals and trees are important!",
     "city": "Melbourne",
     "state": "Victoria",
@@ -2083,7 +2562,15 @@
     ],
     "instagram": "@lilbeanzine",
     "website": "",
-    "image": "tree zines masked/RTT_0009_give-me-a-home-amongst-the-gum-trees.png"
+    "image": "tree zines masked/RTT_0009_give-me-a-home-amongst-the-gum-trees.png",
+    "sharing": [
+      1,
+      2,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1iMqzWIOiQEYC0mb2MBV00J3_nbA3Ap9z",
+    "shop_url": ""
   },
   {
     "title": "Rainbow Beach, Queensland, Australia",
@@ -2101,7 +2588,15 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0010_rainbow-beach.png"
+    "image": "tree zines masked/RTT_0010_rainbow-beach.png",
+    "sharing": [
+      1,
+      2,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=1CLCNXTBf2mytV01BCJPC-GLhTEwERDi1",
+    "shop_url": ""
   },
   {
     "title": "Southern Live Oaks of Savannah",
@@ -2120,7 +2615,13 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0069_southern-live-oaks-of-savannah.png"
+    "image": "tree zines masked/RTT_0069_southern-live-oaks-of-savannah.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "Southern Live Oaks",
@@ -2128,7 +2629,7 @@
     "artist": "Seven Roden",
     "affiliation": "",
     "bio": "My name is Seven and I'm a comic artist and illustrator! My passion is science education and explaining information by combining text and visuals. I love to research and learn about almost anything, especially if its related to earth science!",
-    "description": "Living in Savannah, GA, I'm surrounded by beautiful, historic, trees that inspire me everyday, I knew they would be the perfect subject for this zine!",
+    "description": "Living in Savannah, GA, I'm surrounded by beautiful, historic, Southern Live Oak trees that inspire me everyday, I knew they would be the perfect subject! For this zine I took a scientific illustration/ fact based approach with information about the trees and their ecosystem!",
     "city": "Savannah",
     "state": "Georgia",
     "country": "United States",
@@ -2139,7 +2640,16 @@
     ],
     "instagram": "@pigeonsnacks",
     "website": "https://sevenroden.wixsite.com/portfolio",
-    "image": "tree zines masked/RTT_0068_south-live-oaks---trees-of-savannah-GA---seven-roden.png"
+    "image": "tree zines masked/RTT_0068_south-live-oaks---trees-of-savannah-GA---seven-roden.png",
+    "sharing": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "distribution": "O",
+    "pdf_url": "https://drive.google.com/open?id=10QNVvaIy874KUWZbhtzdrb_uExKbmRhj",
+    "shop_url": ""
   },
   {
     "title": "Not From Around Here",
@@ -2160,7 +2670,13 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0078_not-from-around-here.png"
+    "image": "tree zines masked/RTT_0078_not-from-around-here.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "How a University In the Forest Shaped the Urban Canopy of a City",
@@ -2182,7 +2698,13 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0045_university-in-the-forest-shaped-the-urban-canopy.png"
+    "image": "tree zines masked/RTT_0045_university-in-the-forest-shaped-the-urban-canopy.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "Unincorporated Tree Towns of the Foothills",
@@ -2203,7 +2725,13 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0042_tree-towns-of-the-foothills.png"
+    "image": "tree zines masked/RTT_0042_tree-towns-of-the-foothills.png",
+    "sharing": [
+      1
+    ],
+    "distribution": "",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "My Fig'ing Tree",
@@ -2223,7 +2751,14 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0050_my-fig-ing-tree.png"
+    "image": "tree zines masked/RTT_0050_my-fig-ing-tree.png",
+    "sharing": [
+      1,
+      3
+    ],
+    "distribution": "L",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "Street Trees of Seattle",
@@ -2244,7 +2779,14 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0076_street-trees-of-seattle.png"
+    "image": "tree zines masked/RTT_0076_street-trees-of-seattle.png",
+    "sharing": [
+      1,
+      4
+    ],
+    "distribution": "O",
+    "pdf_url": "",
+    "shop_url": ""
   },
   {
     "title": "Trees of Raleigh",
@@ -2264,7 +2806,14 @@
     ],
     "instagram": "",
     "website": "",
-    "image": "tree zines masked/RTT_0048_trees-of-raleigh.png"
+    "image": "tree zines masked/RTT_0048_trees-of-raleigh.png",
+    "sharing": [
+      1,
+      3
+    ],
+    "distribution": "O",
+    "pdf_url": "",
+    "shop_url": ""
   }
 ]
     function formatLocation(zine) {
@@ -2606,6 +3155,59 @@
         linksSection.style.display = 'none';
       }
 
+      // Sharing options
+      const sharingEl = document.getElementById('detailSharing');
+      const sharingSection = document.getElementById('detailSharingSection');
+
+      if (z.sharing && z.sharing.length > 0) {
+        const sharingOptions = [];
+
+        // Check if ONLY option 1 (preview only)
+        if (z.sharing.length === 1 && z.sharing.includes(1)) {
+          sharingOptions.push('<div class="sharing-option"><span class="sharing-option-icon">👁</span><span class="sharing-option-label">Preview Only</span></div>');
+        } else {
+          // Option 2: Free download
+          if (z.sharing.includes(2)) {
+            if (z.pdf_url && z.pdf_url.trim()) {
+              sharingOptions.push(`<a href="${z.pdf_url}" target="_blank" rel="noopener" class="sharing-option"><span class="sharing-option-icon">📥</span><span class="sharing-option-label">Print-At-Home Copy</span></a>`);
+            }
+          }
+
+          // Option 3: Request a copy
+          if (z.sharing.includes(3)) {
+            let contactLink = '#';
+            let contactText = 'Request a Copy';
+
+            // Prefer email if available in future, for now show generic text
+            if (z.instagram && z.instagram.trim()) {
+              const handle = z.instagram.split(';')[0].replace('@', '').trim();
+              contactLink = `https://instagram.com/${handle}`;
+              contactText = `Request a Copy (via Instagram)`;
+            } else if (z.website && z.website.trim()) {
+              contactLink = z.website.split(';')[0].trim();
+              contactText = `Request a Copy (via Website)`;
+            }
+
+            sharingOptions.push(`<a href="${contactLink}" target="_blank" rel="noopener" class="sharing-option"><span class="sharing-option-icon">✉️</span><span class="sharing-option-label">${contactText}</span></a>`);
+          }
+
+          // Option 4: Order from shop
+          if (z.sharing.includes(4)) {
+            const shopUrl = z.shop_url && z.shop_url.trim() ? z.shop_url : (z.website && z.website.trim() ? z.website.split(';')[0].trim() : '#');
+            sharingOptions.push(`<a href="${shopUrl}" target="_blank" rel="noopener" class="sharing-option"><span class="sharing-option-icon">🛒</span><span class="sharing-option-label">Order a Copy</span></a>`);
+          }
+        }
+
+        if (sharingOptions.length > 0) {
+          sharingEl.innerHTML = sharingOptions.join('');
+          sharingSection.style.display = 'block';
+        } else {
+          sharingSection.style.display = 'none';
+        }
+      } else {
+        sharingSection.style.display = 'none';
+      }
+
       // Tags
       const tagsEl = document.getElementById('detailTags');
       const tagsSection = document.getElementById('detailTagsSection');
@@ -2620,10 +3222,10 @@
             educational: { label: 'Educational' },
             comic: { label: 'Comic' },
             poem: { label: 'Poem' },
-            field: { label: 'Field Guide', tooltip: 'Zines we would want to have in our pocket if we were exploring this place.' },
-            feast: { label: 'Eye Candy', tooltip: 'A feast for our eyes!' },
+            field: { label: 'Field Guide' },
+            feast: { label: 'Eye Candy' },
             analog: { label: 'Analog-Made' },
-            map: { label: 'Cartography', tooltip: 'Contains a depiction of a map somewhere in the zine.' },
+            map: { label: 'Cartography' },
             collage: { label: 'Collage' }
           }
         },
@@ -2641,7 +3243,7 @@
             history: { label: 'History Nerd' },
             science: { label: 'Science' },
             imprint: { label: 'Leaf Imprint' },
-            spirit: { label: 'Sense of Place', tooltip: 'Captures the spirit of Hyperlocal by blending personal observations and anecdotes to distill a deeply place-specific historical, ecological, or cultural phenomenon through mastery of visual narrative and information design.' }
+            spirit: { label: 'Sense of Place' }
           }
         },
         treeType: {
@@ -2681,12 +3283,8 @@
             tagsHTML += `<div class="tag-group-label">${group.label}</div>`;
 
             group.tags.forEach(tag => {
-              const hasTooltipClass = tag.tooltip ? ' has-tooltip' : '';
-              tagsHTML += `<span class="tag-badge${hasTooltipClass}">`;
+              tagsHTML += `<span class="tag-badge">`;
               tagsHTML += tag.label;
-              if (tag.tooltip) {
-                tagsHTML += `<span class="tooltip">${tag.tooltip}</span>`;
-              }
               tagsHTML += `</span>`;
             });
 
